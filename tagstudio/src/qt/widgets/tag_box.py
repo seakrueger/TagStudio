@@ -144,7 +144,6 @@ class TagBoxWidget(FieldWidget):
         # panel.tag_updated.connect(lambda tag: self.lib.update_tag(tag))
         self.edit_modal.show()
 
-
     def update_tag_callback(self, tag_id: int, checked: bool):
         logging.info(
             f"[TAG BOX WIDGET] UPDATE TAG CALLBACK: {"Add" if checked else "Remove"} T:{tag_id} to E:{self.item.id}"
